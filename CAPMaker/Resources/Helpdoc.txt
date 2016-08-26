@@ -1,0 +1,32 @@
+CAP產生器(CAPMaker)使用說明
+-----------------------------
+
+■程式環境需求
+
+1.作業系統需 Windows 7或以上。
+
+2.需安裝Microsoft .NET Framework 4.5 (或以上)
+  https://www.microsoft.com/zh-tw/download/details.aspx?id=30653
+
+■程式設定說明
+
+1.使用者可透過 CAPMaker.exe.config 設定檔來設定文字欄位的文字，以方便設定好慣用的文字，減少重複登打的時間，並加快CAP檔案的產製。
+
+2.在設定檔中，對應方式則是以CAP欄位名稱進行對照，例如:欲修改 identifier 的預設文字，打開 config 檔案可找到setting標籤中，name屬性為Identifier，如下
+
+	  <setting name="Identifier" serializeAs="String"><value>示警代碼</value></setting>
+
+使用者再依據需要自行修改 value 標籤中的文字即可。
+
+3.由於Identifier表示了CAP檔案的唯一性，因此會在其中加入時間戳記， IdentifierFormat 即是設定時間戳記的方式，目前定義的Format為 {0}_{1:yyyyMMhhmmss}，{0}代表Identifier的設定文字，{1:yyyyMMddHHmmss}則為時間戳記的格式，格式說明如下，或參考https://msdn.microsoft.com/zh-tw/library/8kb3ddd4(v=vs.110).aspx 所提供格式說明。
+
+	i.	yyyy 表示四位數西元年
+	ii.	MM表示二位數的月份
+	iii.	dd表示二位數的日期
+	iv.	HH表示二位數的24小時制的小時
+	v.	mm表示二位數的分鐘
+	vi.	ss表示二位數的秒數
+
+4.當msgType為Update或Cancel時，References欄位則為必填，為了方便使用者快速填入已發布的cap的sender,identifier,sent等資料，可透過【匯入】按鈕並選擇欲參考的cap檔案，並可一次選擇多個cap檔案匯入。
+
+5.使用者若需各欄位的說明，可將滑鼠游標停留在欄位名稱上，系統將以泡泡型態顯示欄位說明。

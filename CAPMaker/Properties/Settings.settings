@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CAPMaker.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Identifier" Type="System.String" Scope="User">
+      <Value Profile="(Default)">示警代碼</Value>
+    </Setting>
+    <Setting Name="Sender" Type="System.String" Scope="User">
+      <Value Profile="(Default)">示警發送者代碼</Value>
+    </Setting>
+    <Setting Name="Event" Type="System.String" Scope="User">
+      <Value Profile="(Default)">事件類型名稱</Value>
+    </Setting>
+    <Setting Name="EventCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">事件代碼</Value>
+    </Setting>
+    <Setting Name="SenderName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">發送者名稱</Value>
+    </Setting>
+    <Setting Name="Headline" Type="System.String" Scope="User">
+      <Value Profile="(Default)">事件標題 </Value>
+    </Setting>
+    <Setting Name="Description" Type="System.String" Scope="User">
+      <Value Profile="(Default)">描述事件內容</Value>
+    </Setting>
+    <Setting Name="Web" Type="System.String" Scope="User">
+      <Value Profile="(Default)">包含事件之額外訊息 之網址 </Value>
+    </Setting>
+    <Setting Name="Areadesc" Type="System.String" Scope="User">
+      <Value Profile="(Default)">影響區域描述</Value>
+    </Setting>
+    <Setting Name="Circle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">24.20231,121.4892 5.0</Value>
+    </Setting>
+    <Setting Name="Polygon" Type="System.String" Scope="User">
+      <Value Profile="(Default)">38.47,-120.14 38.34,-119.95 38.52,-119.74 38.62,-119.89 38.47,-120.14</Value>
+    </Setting>
+    <Setting Name="IdentifierFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{0}_{1:yyyyMMHHmmss}</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

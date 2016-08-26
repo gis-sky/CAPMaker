@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>{@identifier}</identifier>
+  <sender>{@sender}</sender>
+  <sent>{@sent}</sent>
+  <status>{@status}</status>
+  <msgType>{@msgtype}</msgType>
+  <scope>{@scope}</scope>{@references}
+  <info>
+    <language>zh-TW</language>
+    <category>{@category}</category>
+    <event>{@event}</event>
+    <urgency>{@urgency}</urgency>
+    <severity>{@severity}</severity>
+    <certainty>{@certainty}</certainty>
+    <eventCode>
+      <valueName>profile:CAP-TWP:Event:1.0</valueName>
+      <value>{@eventcode}</value>
+    </eventCode>
+    <effective>{@effective}</effective>{@onset}
+    <expires>{@expires}</expires>
+    <senderName>{@sendername}</senderName>
+    <headline>{@headline}</headline>
+    <description>{@description}</description>
+    <web>{@web}</web>
+    <parameter>
+      <valueName>alert_title</valueName>
+      <value>{@alert_title}</value>
+    </parameter>
+    <area>
+      <areaDesc>{@areadesc}</areaDesc>
+      {@area}
+    </area>
+  </info>
+</alert>
+

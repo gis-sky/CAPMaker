@@ -27,9 +27,6 @@ namespace CAPMaker
 
             init();
 
-            //var ver = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location);
-
-            //this.Text = string.Format("{0} (V{1}.{2}) ", this.Text, ver.ProductMajorPart, ver.ProductMinorPart);
             this.Text = string.Format("{0} (beta) ", this.Text);
         }
 

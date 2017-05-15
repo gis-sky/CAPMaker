@@ -133,6 +133,9 @@ namespace CAPMaker
 
                 var cap = CapTemplate.StringFormat(valueDicetonary);
 
+
+                sfdSave.FileName = string.Format("{0}_{1}_{2}.cap", tbSender.Text, tbEventCode.Text, sent.ToString("yyyyMMddhhmm"));
+
                 var result = sfdSave.ShowDialog();
 
                 if (result == DialogResult.OK)
